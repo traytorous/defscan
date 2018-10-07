@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<style>
+			#map{
+			height: 200px ;
+			width:100% ;
+		  }
+		</style>
+	<title>Website</title>
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+		
+		<script>
+				function initMap(){
+				  //Map Options
+				  var options ={
+					zoom:2,
+					center:{lat:52.9225,lng:13.405}
+				  };
+				  //New Map
+				  var map = new
+				  google.maps.Map(document.getElementById('map'), options);
+			  /*
+				  // Add marker
+				  var marker = new google.maps.Marker({
+					 position:{lat:35.846014,lng:-78.902753},
+					 map:map,
+					 icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+			  
+				  });
+			  
+				  var infoWindow = new google.maps.InfoWindow({
+					content: '<h1>My house</h1>'
+				  });
+			  
+				  marker.addListener('click',function(){
+					infoWindow.open(map, marker);
+				  });
+				  */
+			  
+				  addMarker({lat:39.9042,lng:116.4074});
+				  addMarker({lat:55.7558,lng:37.6173});
+				  addMarker({lat:59.7558,lng:30.6173});
+				  addMarker({lat:28.7558,lng:77.6173});
+				  addMarker({lat:15.7558,lng:47.6173});
+				  addMarker({lat:39.9334,lng:32.8597});
+	
+				  //Add marker function
+				  function addMarker(coords){
+					var marker = new google.maps.Marker({
+					   position:coords,
+					   map:map,
+					   icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+					   
+					});
+			  
+				  }
+				}
+				
+				</script>
+				<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNW7ed2LvWYwLxlBgjWTHdmX901_LtGQo&callback=initMap">
+					</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<div class="container">
+		<div class="box-1">
+			<h1>About DefScan</h1>
+			<div id="map"></div>
+			<p>This website is a service that all americans should have. The service of security. This website is here to provide anyone who should have access to it the tools and the knowldege to feel safe when they are interacting with technology. In the map above there is a graphical representation of the top countries who have and still are constantly cyber attacking American services. This graph is to show people that we are contantly being attacked and that free services like this should be available to people who can't afford it.</p>
+        </div>
+        
+		
+	</div> <!-- container -->	
+	<ul class="navbar">
+        <li><a class="button" href="../templates/home.html">Home</a></li>
+		<li><a class="button" href="../templates/virusscanner.html">Virus Scanner</a></li>
+		
+	</ul>
+
+	<footer class="footer">
+		<p>Copyright &copy; 2018, DefScan</p>
+	</footer>
+</body>
+</html>

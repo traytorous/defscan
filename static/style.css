@@ -1,0 +1,263 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+html {
+	overflow: auto;
+	background: black;
+	height: 100%;
+	background-image: url('../static/matrix.gif');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	
+}
+
+.success{
+	background:black;
+}
+
+img{
+	padding-top: 50px;
+	width : 800px;
+	height: 500px;
+
+	transition-delay: 3s;
+}
+
+
+.container{
+	width:80%;
+	margin:auto;
+
+}
+
+.button{
+	background: black;
+	color: white;
+	border:none;
+	
+
+}
+
+
+body{
+	margin:0;
+	font: normal 16px  sans-serif;
+    
+}
+
+a{
+	text-decoration: none;
+
+}
+
+.navbar{
+	
+	padding-left:0;
+	list-style: none;
+	width:150px;
+	position: fixed;
+	padding-top: 30px;
+
+}
+
+.button{
+	text-align:center;	
+	font-weight: bold;
+	font: sans-serif;
+	padding: 10px;
+	display: block;
+	border: 2px lightgreen solid;
+	border-radius: 25px;
+	width : 125px;
+	background-color: rgba(0,75,0,0.5) ;
+
+}
+
+.navbar li{
+	padding: 2px;
+}
+
+.button:hover{
+	background: lightgreen;
+	color: black;
+}
+
+.box-1{
+	text-align: center;
+	font: sans-serif;
+	padding:0px 15px;
+	color:white;
+	margin-top:20px;
+
+	margin:20px 0;
+
+	cursor: pointer;
+}
+
+.box-1 h1{
+	letter-spacing: 0.2em;
+	color:white;
+
+	font-size: 50px;
+	border: 3px lightgreen solid;
+	padding: 10px;
+	border-radius: 25px;
+	background-color: rgba(0,75,0,0.5) ;
+}
+
+
+.box-2{
+	
+	text-align:center;
+	padding-top:0px;
+	margin-bottom:0px;
+	margin:auto;
+	width:100%;
+	float : right;
+}
+
+.box-2 h3{
+	color:white;
+
+}
+
+.video{
+	width:100%;
+	float:right;
+	margin : auto;
+	text-align:center;
+	padding-top: 25px;
+
+
+}
+
+.video iframe{
+	width: 400px;
+	height : 200px;
+	border : lightgreen solid 2px;
+
+}
+
+.form-box{
+	float:right;
+	color:white;
+	text-align:center;
+	padding-top:0px;
+	width:100%;
+	
+}
+
+
+.file, .submit{
+	background-color: rgba(0,75,0,0.5) ;
+	border: lightgreen solid;
+	color: lightgreen;
+	font-style: italic;
+	border-radius:5px;
+
+}
+
+.submit{
+	height:26px;
+	position:center center;
+}
+
+.submit:hover{
+	background: lightgreen;
+	color: black;
+}
+
+ul{
+	float:left;
+}
+
+.description{
+	border: 2px green solid;
+	margin: auto;
+    width: 40%;
+	
+}
+.about{
+	float : right;
+	text-align:center;
+	color: white;
+	width : 100%;
+}
+
+.footer p{
+	color:lightgreen;
+	border: lightgreen 1px solid;
+	position : absolute;
+	bottom : 1px;
+	margin-bottom: 1px;
+	text-align:center;
+	width : 100%;
+}
+
+
+.login-body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.login-body h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid lightgreen;
+    margin-bottom: 50px;
+    padding: 13px 0;
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid lightgreen;
+
+}
+
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+.btn{
+	position: relative;
+	top: 50px;
+    width: 100px;
+    background: none;
+    border: 2px solid lightgreen;
+    color: white;
+	border-radius: 25px;
+	background-color: rgba(0,75,0,0.5) ;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.btn:hover{
+	background: lightgreen;
+	color: black;
+}
