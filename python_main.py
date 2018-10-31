@@ -10,6 +10,7 @@ def scan_file():
    data = subprocess.getstatusoutput('clamscan '+str(x))
    docs = open("viral.html","w")
    docs.write(str(data))
+   docs.close()
    
 
 app = Flask(__name__)
