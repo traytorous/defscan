@@ -1,3 +1,5 @@
+#@Author Tray Keller
+#Date last edit - 11/15/18
 from flask import Flask, render_template, request, url_for, redirect
 from werkzeug import secure_filename
 import pprint
@@ -8,9 +10,8 @@ def scan_file():
    x = subprocess.getstatusoutput('ls | grep .exe | grep .file')
    x = x[1]
    data = subprocess.getstatusoutput('clamscan '+str(x))
-   docs = open("viral.html","w")
-   docs.write(str(data))
-   docs.close()
+   with open("viral.html","w" as docs:
+      docs.write(str(data))
    
 
 app = Flask(__name__)
